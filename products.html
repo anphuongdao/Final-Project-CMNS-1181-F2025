@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Products — NeonCam</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="brand">
+      <div>
+        <div class="logo">=^..^= NeonCam</div>
+        <div class="logo-sub">Your portal to cute pastel cameras</div>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Shop</a>
+      <a class="cart-link" href="cart.html">Cart <span id="cart-count" class="cart-badge">0</span></a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2 class="section-title">˗ˏˋ ★ ˎˊ˗ Cute Cameras ˗ˏˋ ★ ˎˊ˗</h2>
+      <div class="grid">
+        <!-- Canon PowerShot -->
+        <div class="product">
+          <img src="https://images-us-prod.cms.commerce.dynamics.com/cms/api/hbzzfqllpg/imageFileData/search?fileName=/Products%2F566CAN447_000_001.png" alt="">
+          <h3>Canon PowerShot G7 X Mark III </h3>
+          <div class="price">$749</div>
+          <button class="btn-sm" onclick="addToCart('Canon PowerShot G7 X Mark III', 749, 'https://images-us-prod.cms.commerce.dynamics.com/cms/api/hbzzfqllpg/imageFileData/search?fileName=/Products%2F566CAN447_000_001.png')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <img src="https://excellentphoto.ca/cdn/shop/products/a6400-selp1650-front-black_00acc478-a4b1-4179-8728-b6ef539eee3f.jpg?&width=500" alt="">
+          <h3>Sony a6400 </h3>
+          <div class="price">$999</div>
+          <button class="btn-sm" onclick="addToCart('Sony a6400', 999, 'https://excellentphoto.ca/cdn/shop/products/a6400-selp1650-front-black_00acc478-a4b1-4179-8728-b6ef539eee3f.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <img src="https://images-us-prod.cms.commerce.dynamics.com/cms/api/hbzzfqllpg/imageFileData/search?fileName=/Products%2F567FUJ128_000_001.png" alt="">
+          <h3>Fujifilm X-T30 </h3>
+          <div class="price">$899</div>
+          <button class="btn-sm" onclick="addToCart('Fujifilm X-T30', 899, 'https://images-us-prod.cms.commerce.dynamics.com/cms/api/hbzzfqllpg/imageFileData/search?fileName=/Products%2F567FUJ128_000_001.png')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <img src="https://cvp.com/images/products/altimage/13-10-20151444748065powershot-g9x-silver-image-1.jpg" alt="">
+          <h3>Canon G9 X Mk II </h3>
+          <div class="price">$529</div>
+          <button class="btn-sm" onclick="addToCart('Canon G9 X Mk II', 529, 'https://cvp.com/images/products/altimage/13-10-20151444748065powershot-g9x-silver-image-1.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <img src="https://www.zoomcamera.net/wp-content/uploads/2019/09/Panasonic-G95-Body-02.jpg" alt="">
+          <h3>Lumix G95</h3>
+          <div class="price">$799</div>
+          <button class="btn-sm" onclick="addToCart('Lumix G95', 799, 'https://www.zoomcamera.net/wp-content/uploads/2019/09/Panasonic-G95-Body-02.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <img src="https://m.media-amazon.com/images/I/71FtJkfogQL.jpg" alt="">
+          <h3>Olympus E-M10 Mk III </h3>
+          <div class="price">$649</div>
+          <button class="btn-sm" onclick="addToCart('Olympus E-M10 Mk III', 649, 'https://m.media-amazon.com/images/I/71FtJkfogQL.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <img src="https://www.sony.com/image/710a83a2d82ce8e30543b68b7e5a0c44?fmt=pjpeg&wid=330" alt="">
+          <h3>Sony RX100 V </h3>
+          <div class="price">$949</div>
+          <button class="btn-sm" onclick="addToCart('Sony RX100 V', 949, 'https://www.sony.com/image/710a83a2d82ce8e30543b68b7e5a0c44?fmt=pjpeg&wid=330')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <img src="https://www.mcbaincamera.com/_images/0240511.jpg" alt="">
+          <h3>Nikon Z50 </h3>
+          <div class="price">$878</div>
+          <button class="btn-sm" onclick="addToCart('Nikon Z50', 878, 'https://www.mcbaincamera.com/_images/0240511.jpg')">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="discount-bubble" onclick="openDiscount()">=^..^= Free Discount!</button>
+  <div id="discount-popup" class="popup-wrapper">
+    <div class="popup">
+      <h4>-`♡´- Claim Your 10% Discount -`♡´-</h4>
+      <p>Enter your email to get a sweet sparkly coupon ♡</p>
+      <input id="discount-email" type="email" placeholder="yourname@cute.com">
+      <div style="margin-top:10px;">
+        <button class="btn-sm" onclick="submitDiscount()">Claim</button>
+        <button class="btn-sm btn-ghost" onclick="closeDiscount()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <footer> NeonCam © 2025 </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

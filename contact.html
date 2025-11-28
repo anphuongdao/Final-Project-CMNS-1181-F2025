@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact NeonCam ♡</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+    <div class="brand">
+      <div>
+        <div class="logo">=^..^= NeonCam</div>
+        <div class="logo-sub">Your portal to cute pastel cameras</div>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Shop</a>
+      <a class="cart-link" href="cart.html">Cart <span id="cart-count" class="cart-badge">0</span></a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section style="max-width:760px;margin:auto;">
+      <h2 class="section-title">˗ˏˋ ★ ˎˊ˗ Send Us a Message ˗ˏˋ ★ ˎˊ˗</h2>
+
+      <div class="contact-card">
+        <p class="kawaii-note">We love hearing from our cute creators! Fill in the form below and we'll sparkle back soon •⩊•</p>
+
+        <form id="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <input type="text" name="subject" placeholder="Subject" required>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button class="btn-sm" type="submit">Send Message ── .✦</button>
+        </form>
+
+        <p id="form-feedback" style="margin-top:12px;color:var(--teal);"></p>
+      </div>
+    </section>
+  </main>
+
+  <button class="discount-bubble" onclick="openDiscount()">=^..^= Free Discount!</button>
+  <div id="discount-popup" class="popup-wrapper">
+    <div class="popup">
+      <h4>-`♡´- Claim Your 10% Discount -`♡´-</h4>
+      <p>Enter your email to get a sweet sparkly coupon ♡</p>
+      <input id="discount-email" type="email" placeholder="yourname@cute.com">
+      <div style="margin-top:10px;">
+        <button class="btn-sm" onclick="submitDiscount()">Claim</button>
+        <button class="btn-sm btn-ghost" onclick="closeDiscount()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>✧ NeonCam © 2025 ✧</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Your Cart ✧ NeonCam</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="brand">
+      <div>
+        <div class="logo">=^..^= NeonCam</div>
+        <div class="logo-sub">Your portal to cute pastel cameras</div>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Shop</a>
+      <a class="cart-link" href="cart.html">Cart <span id="cart-count" class="cart-badge">0</span></a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="cart-container">
+      <h2 class="section-title" style="text-align:left;">₍ᐢ. .ᐢ₎ ₊˚⊹♡ Your Carts</h2>
+
+      <div id="cart-items"></div>
+
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:18px;">
+        <div id="cart-total" style="font-weight:800;color:var(--teal);"></div>
+        <div style="display:flex;gap:12px;">
+          <button class="btn-sm" onclick="clearCart()">Clear Cart</button>
+          <button class="btn-sm" onclick="alert('Checkout flow not implemented in this demo ✧')">Checkout</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="discount-bubble" onclick="openDiscount()">=^..^= Free Discount!</button>
+  <div id="discount-popup" class="popup-wrapper">
+    <div class="popup">
+      <h4>-`♡´- Claim Your 10% Discount -`♡´-</h4>
+      <p>Enter your email to get a sweet sparkly coupon ♡</p>
+      <input id="discount-email" type="email" placeholder="yourname@cute.com">
+      <div style="margin-top:10px;">
+        <button class="btn-sm" onclick="submitDiscount()">Claim</button>
+        <button class="btn-sm btn-ghost" onclick="closeDiscount()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>✧ NeonCam © 2025 ✧</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

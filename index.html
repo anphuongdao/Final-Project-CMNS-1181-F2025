@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>NeonCam =^..^= Cute Cameras</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="brand">
+      <div>
+        <div class="logo">=^..^= NeonCam</div>
+        <div class="logo-sub">Your portal to cute pastel cameras</div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Shop</a>
+      <a class="cart-link" href="cart.html">Cart <span id="cart-count" class="cart-badge">0</span></a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <h2 class="hero-title">Welcome to NeonCam °‧ 𓆝 𓆟 𓆞 ·｡</h2>
+        <p class="hero-sub">Your portal to the cutest digital cameras + sparkly photography tips ♡</p>
+        <a class="hero-cta" href="products.html">Shop Now </a>
+      </div>
+      <img src="https://i.pinimg.com/originals/b2/60/94/b26094970505bcd59c2e5fe8b6f41cf0.jpg?nii=t" alt="cute hero" class="hero-art">
+    </section>
+
+    <!-- Featured -->
+ <section class="featured-wrapper">
+  <div class="featured-ribbon">₍ᐢ. .ᐢ₎ ₊˚⊹♡ Featured of the Week </div>
+
+  <div class="featured-card">
+    <img class="featured-img" 
+         src="https://www.sony.com/image/710a83a2d82ce8e30543b68b7e5a0c44?fmt=pjpeg&wid=330&bgcolor=FFFFFF&bgc=FFFFFF" 
+         alt="Sony RX100 V">
+
+    <div class="featured-info">
+      <h3 class="featured-title">Sony RX100 V ✧</h3>
+      <p class="featured-desc">
+        Magical clarity + compact kawaii charm.  
+        Perfect for selfies, aesthetic vlogs, & sparkly edits ♡
+      </p>
+      <button class="btn-featured"
+              onclick="addToCart('Sony RX100 V', 949, 'https://www.sony.com/image/710a83a2d82ce8e30543b68b7e5a0c44?fmt=pjpeg&wid=330')">
+        Add Featured Item ➤
+      </button>
+    </div>
+  </div>
+</section>
+
+    <!-- Articles -->
+    <section>
+      <h3 class="section-title">✎ᝰ. Photography Fun & Tips >ᴗ<</h3>
+      <div class="articles">
+        <div class="article">
+          <img src="https://i.pinimg.com/originals/4c/9e/49/4c9e49cbc1dcc674981c535e8ced0c9e.jpg" alt="">
+          <h4>Top 5 Cameras for Your Aesthetic Vlog</h4>
+          <p class="kawaii-note">Find the cutest cameras perfect for pastel vlogs and Instagram reels ✧</p>
+        </div>
+        <div class="article">
+          <img src="https://i.pinimg.com/736x/28/a3/ed/28a3ed7a0960599cccef29b64119baf1.jpg" alt="">
+          <h4>How to Take Dreamy Pastel Photos</h4>
+          <p class="kawaii-note">Learn tricks to capture soft, dreamy, Y2K-style photos in any lighting ♡</p>
+        </div>
+        <div class="article">
+          <img src="https://i.pinimg.com/originals/de/fd/63/defd6320ac84e756f6741325a2ebc5c1.jpg" alt="">
+          <h4>Y2K Photography Tips for Beginners</h4>
+          <p class="kawaii-note">Step into the world of retro aesthetics with easy tips for your camera ✧</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="discount-bubble" onclick="openDiscount()">=^..^= Free Discount!</button>
+  <div id="discount-popup" class="popup-wrapper">
+    <div class="popup">
+      <h4>-`♡´- Claim Your 10% Discount -`♡´-</h4>
+      <p>Enter your email to get a sweet sparkly coupon ♡</p>
+      <input id="discount-email" type="email" placeholder="yourname@cute.com">
+      <div style="margin-top:10px;">
+        <button class="btn-sm" onclick="submitDiscount()">Claim</button>
+        <button class="btn-sm btn-ghost" onclick="closeDiscount()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    ✧ NeonCam © 2025 ✧ — Made with pastel sparkles ♡
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
