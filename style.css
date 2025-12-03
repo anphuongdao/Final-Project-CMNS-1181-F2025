@@ -1,22 +1,14 @@
-/* ===========================
-   NeonCam — Modern Pastel (Style A — Improved Contrast)
-=========================== */
-
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html,body { height: auto; }
-
-/* Updated Palette (Legible Pastels) */
 :root{
-  --teal: #AFC4E5;        /* soft lavender-blue */
-  --blue: #6B5568;        /* readable mauve */
-  --pink: #F7C8D0;        /* soft baby pink */
-  --blush: #FFF6F7;       /* pale blush */
+  --teal: #AFC4E5; 
+  --blue: #6B5568;  
+  --pink: #F7C8D0;  
+  --blush: #FFF6F7; 
   --card-shadow: 0 6px 18px rgba(17,17,17,0.08);
   --radius-lg: 16px;
   --radius-md: 12px;
 }
-
-/* Base */
 body{
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(180deg, var(--blush) 0%, #FFEFF2 100%);
@@ -25,8 +17,6 @@ body{
   -moz-osx-font-smoothing:grayscale;
   line-height:1.45;
 }
-
-/* Header */
 .header {
   background: linear-gradient(90deg, var(--pink), rgba(247,200,208,0.85));
   border-bottom: 2px solid var(--teal);
@@ -53,8 +43,6 @@ body{
   font-size:0.85rem;
   color: rgba(0,0,0,0.5);
 }
-
-/* Nav */
 .nav {
   display:flex;
   gap:16px;
@@ -71,8 +59,6 @@ body{
   background: rgba(0,0,0,0.05);
   color:var(--teal);
 }
-
-/* Cart badge */
 .cart-link { position:relative; display:inline-flex; align-items:center; gap:8px; }
 .cart-badge{
   background:var(--teal);
@@ -82,11 +68,7 @@ body{
   border-radius:999px;
   margin-left:6px;
 }
-
-/* Layout */
 .container { max-width:1100px; margin:28px auto; padding:0 18px; }
-
-/* Hero */
 .hero {
   background: white;
   border-radius: var(--radius-lg);
@@ -117,16 +99,12 @@ body{
   border-radius:12px;
   box-shadow:var(--card-shadow);
 }
-
-/* --- Featured Product Highlight --- */
-
 .featured-wrapper {
   position: relative;
   margin: 40px 0;
 }
-
 .featured-ribbon {
-  background: #ffb6cc; /* stronger pastel for visibility */
+  background: #ffb6cc;
   color: #5a244f;
   font-weight: 600;
   padding: 8px 18px;
@@ -137,9 +115,8 @@ body{
   font-size: 14px;
   letter-spacing: 0.5px;
 }
-
 .featured-card {
-  background: #ffe6ef;  /* pink mist */
+  background: #ffe6ef;
   border: 2px solid #ffc7d6;
   border-radius: 18px;
   padding: 22px;
@@ -148,8 +125,6 @@ body{
   align-items: center;
   box-shadow: 0 4px 14px rgba(255, 182, 200, 0.35);
 }
-
-/* Featured image */
 .featured-img {
   width: 180px;
   border-radius: 12px;
@@ -166,15 +141,12 @@ body{
   color: #5a244f;
   margin-bottom: 6px;
 }
-
 .featured-desc {
   color: #6d4b63;
   font-size: 14px;
   margin-bottom: 14px;
   line-height: 1.5;
 }
-
-/* CTA button */
 .btn-featured {
   background: #ff9abc;
   color: #ffffff;
@@ -186,36 +158,27 @@ body{
   font-weight: 600;
   transition: 0.2s ease;
 }
-
 .btn-featured:hover {
   background: #ff8ab0;
 }
-
-/* --- Responsive --- */
 @media (max-width: 700px) {
   .featured-card {
     flex-direction: column;
     text-align: center;
   }
-
   .featured-img {
     width: 70%;
   }
-
   .featured-ribbon {
     align-self: center;
   }
 }
-
-/* Titles */
 .section-title {
   text-align:center;
   color:var(--blue);
   font-size:24px;
   margin-bottom:18px;
 }
-
-/* Product grid */
 .grid {
   display:grid;
   grid-template-columns: repeat(3,1fr);
@@ -244,8 +207,6 @@ body{
 }
 .product h3 { color:var(--blue); font-size:18px; }
 .price { color:var(--teal); font-weight:700; }
-
-/* Buttons */
 .btn-sm {
   padding:8px 12px;
   background:var(--blue);
@@ -256,7 +217,6 @@ body{
   font-weight:700;
 }
 .btn-sm:hover { background:var(--teal); }
-
 .btn-ghost {
   background:transparent;
   border:2px solid rgba(0,0,0,0.06);
@@ -266,8 +226,6 @@ body{
   border-color:var(--teal);
   color:var(--teal);
 }
-
-/* Articles */
 .articles {
   display:grid;
   grid-template-columns: repeat(3,1fr);
@@ -288,8 +246,6 @@ body{
   border-radius:8px;
   margin-bottom:8px;
 }
-
-/* Contact */
 .contact-card {
   background:white;
   padding:20px;
@@ -307,8 +263,6 @@ input,textarea{
 input:focus, textarea:focus {
   outline: 2px solid rgba(175,196,229,0.35);
 }
-
-/* Cart */
 .cart-container {
   background:white;
   padding:18px;
@@ -330,14 +284,11 @@ input:focus, textarea:focus {
 }
 .cart-item h4 { margin-bottom:6px; font-size:16px; }
 .cart-meta { margin-left:auto; display:flex; gap:12px; align-items:center; }
-
 .empty {
   text-align:center;
   color:rgba(0,0,0,0.5);
   padding:28px 0;
 }
-
-/* Footer */
 footer {
   margin-top:40px;
   padding:20px 18px;
@@ -346,8 +297,6 @@ footer {
   background:linear-gradient(90deg, rgba(247,200,208,0.7), rgba(255,246,247,0.85));
   border-top:2px solid var(--teal);
 }
-
-/* Discount */
 .discount-bubble {
   position:fixed;
   right:18px;
@@ -378,12 +327,8 @@ footer {
   text-align:center;
 }
 .popup input { margin-top:12px; }
-
-/* Small utilities */
 .row { display:flex; gap:12px; align-items:center; }
 .kawaii-note { color: rgba(0,0,0,0.55); font-size:16px; }
-
-/* Hearts */
 .heart-burst {
   position:fixed;
   font-size:1.6rem;
@@ -396,8 +341,6 @@ footer {
   0%{opacity:1; transform:translateY(0) scale(1);}
   100%{opacity:0; transform:translateY(-80px) scale(1.2);}
 }
-
-/* Responsive */
 @media (max-width:1000px){
   .grid, .articles { grid-template-columns: repeat(2,1fr); }
   .hero-left { max-width:55%; }
@@ -410,3 +353,4 @@ footer {
   .header { padding:12px; gap:8px; }
   .section-title { font-size:20px; }
 }
+
