@@ -57,7 +57,7 @@ body{
 }
 .nav a:hover {
   background: rgba(0,0,0,0.05);
-  color: #4a1e23;
+  color: brown;
 }
 .cart-link { position:relative; display:inline-flex; align-items:center; gap:8px; }
 .cart-badge{
@@ -351,5 +351,6 @@ footer {
   .header { padding:12px; gap:8px; }
   .section-title { font-size:20px; }
 }
+
 
 
