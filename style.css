@@ -57,7 +57,7 @@ body{
 }
 .nav a:hover {
   background: rgba(0,0,0,0.05);
-  color:var(--teal);
+  color: #4a1e23;
 }
 .cart-link { position:relative; display:inline-flex; align-items:center; gap:8px; }
 .cart-badge{
@@ -130,8 +130,6 @@ body{
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.12);
 }
-
-/* Featured text */
 .featured-info {
   flex: 1;
 }
@@ -353,4 +351,5 @@ footer {
   .header { padding:12px; gap:8px; }
   .section-title { font-size:20px; }
 }
+
 
